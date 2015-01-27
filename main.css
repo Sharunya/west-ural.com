@@ -139,3 +139,10 @@
 / / position : absolute;
   top: expression(document.getElementsByTagName( 'body' )[0].scrollTop + "px");
 }
+
+.opacity {
+  filter: alpha(opacity=90); /* IE, all IE*/
+  -moz-opacity: 0.9; /* old gecko */
+  -khtml-opacity: 0.9; /* old safari */
+  opacity: 0.9; /* all normal browsers */
+}

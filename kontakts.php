@@ -35,10 +35,19 @@ if (!(@$page)) {
     <link href="main.css" rel="stylesheet" type="text/css">
 </head>
 <body bgcolor="#808080">
-<table align="center" cellpadding="0" cellspacing="0" border="0">
-    <tr>
-        <td><img src="./img/head.jpg" border="0" width="971" height="139"></td>
-    </tr>
+<?php
+$page = "kontakts.php";
+require("header.php");
+?>
+
+<table align="center" cellpadding="0" cellspacing="0" border="0" style="
+    margin-top: 196px;
+    width: 1024px;
+">
+    <!--    <tr>
+            <td><img src="./img/head.jpg" border="0" width="971" height="139"></td>
+        </tr>
+    -->
     <tr>
         <td>
             <table align="center" cellspacing="0" cellpadding="0" border="0" width="100%">
@@ -47,7 +56,7 @@ if (!(@$page)) {
                         <table width="100%" cellpadding="0" cellspacing="0" border="0">
                             <tr>
                                 <td align="left">
-                                    <?php build_main_menu("", "kontakts.php"); ?>
+                                    <!--                                    --><?php //build_main_menu("", "kontakts.php"); ?>
                                 </td>
                                 <td align="right" class="cls_name_avtor_haed_fotobank" valign="top">
                                     <?php

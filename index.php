@@ -69,7 +69,7 @@ if (!(@$select_id_razdel)) {
 
     function play()
     {
-        timer = setInterval(f, 5000);
+        timer = setInterval(f, 10000);
     }
     function f()
     {
@@ -84,37 +84,10 @@ if (!(@$select_id_razdel)) {
     }
     play();
 </script>
-<div class="mytopmenu" style="
-    width: 100%;
-">
-    <div style="
-    width: 50%;
-    height: 139px;
-    float: left;
-    background-color: #e19535;
-">
-        &nbsp;</div>
-    <div style="
- width: 50%;
-    height: 139px;
-    float: left;
-    background-color: #333333;
-            ">
-        &nbsp;</div>
-</div>
-
-<div class="mytopmenu" style="
-    width: 100%;
-">
-    <img src="./img/head.jpg" border="0" width="971" height="139" style="
-    display: block;
-    margin: 0 auto;
-">
-</div>
-<div class="mytopmenu" style="left: 120px; top: 139px; background-color: gray; height: 47px; padding-bottom: 10px; width: 720px;">
-    <?php build_main_menu("", "index.php"); ?>
-</div>
-
+<?php
+$page = "index.php";
+require("header.php");
+?>
 <table align="center" cellpadding="0" cellspacing="0" border="0" style="
     margin-top: 196px;
     width: 1024px;
@@ -186,7 +159,7 @@ if (!(@$select_id_razdel)) {
                                             <td bgcolor="#595959" width="457" height="100%" align="left">
                                                 <br>
                                                 <font class="cls_main_descr_reklama_foto">
-                                                    <DIV id="imgObjText">
+                                                    <DIV id="imgObjText" style="padding: 9px">
                                                         <?
                                                         if (@$descr) {
                                                             echo "$descr[1]";
