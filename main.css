@@ -77,12 +77,14 @@
 }
 
 .cls_1 {
-  padding-top: 2px;
+  padding-top: 0;
 }
 
 .cls_box_poisk {
   color: Black;
   background-color: #B7B9BE;
+  padding: 2px;
+  width: 226px;
 }
 
 .cls_news_txt {

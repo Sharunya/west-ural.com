@@ -111,6 +111,10 @@ if (!(@$select_id_razdel)) {
     margin: 0 auto;
 ">
 </div>
+<div class="mytopmenu" style="left: 120px; top: 139px; background-color: gray; height: 47px; padding-bottom: 10px; width: 720px;">
+    <?php build_main_menu("", "index.php"); ?>
+</div>
+
 <table align="center" cellpadding="0" cellspacing="0" border="0" style="
     margin-top: 196px;
     width: 1024px;
@@ -118,46 +122,6 @@ if (!(@$select_id_razdel)) {
     <tr>
         <td>
             <table align="center" cellspacing="0" cellpadding="0" border="0" width="100%">
-                <tr>
-                    <td colspan="2" valign="top">
-                        <div class="mytopmenu" style="left: 208px; top: 139px; background-color: gray; height: 47px; padding-bottom: 10px; width: 643px;">
-                            <?php build_main_menu("", "index.php"); ?>
-                        </div>
-                    </td>
-                    <td rowspan="2" valign="top" align="right">
-                        <br>
-                        <table border="0" align="right" cellpadding="0" cellspacing="0">
-                            <?php
-
-
-                            $r = get_fotki($id_razdel = 0, $id_avtor = 0, $id_foto = 0, $show_main_page = "Y");
-                            $id_top_foto = sql_to_array($r, 'id_foto');
-                            $name_litle = sql_to_array($r, 'name_litle');
-                            $name_avtor = sql_to_array($r, 'name_avtor');
-                            $id_avtor = sql_to_array($r, 'id_avtor');
-                            $k = 0;
-                            for ($i = 1; $i <= count($id_top_foto) / 2; $i++) {
-                                $k++;
-                                echo "<tr align='center' valign='top'>";
-                                if ($k <= count($id_top_foto)) {
-                                    $h = get_html_litle_top_foto($id_top_foto[$k], $name_litle[$k], $name_avtor[$k], $id_avtor[$k]);
-                                    echo "<td width='120'>$h</td>";
-                                }
-                                echo "<td width='30'>&nbsp;</td>";
-                                $k++;
-                                if ($k <= count($id_top_foto)) {
-                                    $h = get_html_litle_top_foto($id_top_foto[$k], $name_litle[$k], $name_avtor[$k], $id_avtor[$k]);
-                                    echo "<td width='120'>$h</td>";
-                                }
-                                echo "</tr>";
-                                if ($i == 5) {
-                                    break;
-                                }
-                            }
-                            ?>
-                        </table>
-                    </td>
-                </tr>
                 <tr>
                     <td valign="top">
                         <br>
@@ -262,6 +226,39 @@ if (!(@$select_id_razdel)) {
                                     </table>
                                 </td>
                             </tr>
+                        </table>
+                    </td>
+                    <td valign="top" align="right">
+                        <br>
+                        <table border="0" align="right" cellpadding="0" cellspacing="0">
+                            <?php
+
+
+                            $r = get_fotki($id_razdel = 0, $id_avtor = 0, $id_foto = 0, $show_main_page = "Y");
+                            $id_top_foto = sql_to_array($r, 'id_foto');
+                            $name_litle = sql_to_array($r, 'name_litle');
+                            $name_avtor = sql_to_array($r, 'name_avtor');
+                            $id_avtor = sql_to_array($r, 'id_avtor');
+                            $k = 0;
+                            for ($i = 1; $i <= count($id_top_foto) / 2; $i++) {
+                                $k++;
+                                echo "<tr align='center' valign='top'>";
+                                if ($k <= count($id_top_foto)) {
+                                    $h = get_html_litle_top_foto($id_top_foto[$k], $name_litle[$k], $name_avtor[$k], $id_avtor[$k]);
+                                    echo "<td width='120'>$h</td>";
+                                }
+                                echo "<td width='30'>&nbsp;</td>";
+                                $k++;
+                                if ($k <= count($id_top_foto)) {
+                                    $h = get_html_litle_top_foto($id_top_foto[$k], $name_litle[$k], $name_avtor[$k], $id_avtor[$k]);
+                                    echo "<td width='120'>$h</td>";
+                                }
+                                echo "</tr>";
+                                if ($i == 5) {
+                                    break;
+                                }
+                            }
+                            ?>
                         </table>
                     </td>
                 </tr>
