@@ -229,7 +229,6 @@ if (!(@$select_id_razdel)) {
                         </table>
                     </td>
                     <td valign="top" align="right">
-                        <br>
                         <table border="0" align="right" cellpadding="0" cellspacing="0">
                             <?php
 
