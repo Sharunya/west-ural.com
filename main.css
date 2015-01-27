@@ -1,0 +1,139 @@
+.cls_label_admin {
+  font-family: Arial Narrow;
+}
+
+.cls_head_admin {
+  font-family: Arial Black;
+}
+
+.cls_table_content_admin {
+  font-family: "Courier New", Courier, monospace;
+}
+
+.cls_main_menu {
+  font-style: italic;
+  font: bold "Times New Roman" Times serif;
+  font-size: 24px;
+  padding-left: 4px;
+  color: Black;
+}
+
+.cls_txt_present {
+  font: bold "Times New Roman" Times serif;
+  font-size: 25px;
+  padding-left: 10px;
+  color: White;
+  font-style: italic;
+}
+
+.cls_txt_present_2 {
+  font: bold "Times New Roman" Times serif;
+  font-size: 20px;
+  padding-left: 10px;
+  color: White;
+  font-style: italic;
+}
+
+.cls_name_avtor_haed_fotobank {
+  font-style: italic;
+  font: bold "Times New Roman" Times serif;
+  font-size: 24px;
+  padding-left: 10px;
+  color: White;
+}
+
+.cls_main_kat {
+  font-style: italic;
+  font: bold "Times New Roman", Times, serif;
+  font-size: 18px;
+  margin-left: 5px;
+  margin-top: 5px;
+  color: Black;
+}
+
+.cls_table_kat {
+  border-width: 0;
+}
+
+.cls_main_avtors {
+  color: White;
+  font-style: italic;
+}
+
+.cls_admin_menu {
+  color: Red;
+  font-style: oblique;
+}
+
+.cls_main_link_reklama {
+  color: #b3b3b2;
+}
+
+.cls_main_descr_reklama_foto {
+  color: #d3d4cf;
+  padding-left: 10px;
+  background-color: #595959;
+  border: none;
+}
+
+.cls_1 {
+  padding-top: 2px;
+}
+
+.cls_box_poisk {
+  color: Black;
+  background-color: #B7B9BE;
+}
+
+.cls_news_txt {
+  text-align: justify;
+}
+
+.cls_select_main_menu {
+  color: Fuchsia;
+}
+
+.cls_forum_top_title {
+  color: White;
+  font-style: italic;
+}
+
+.cls_box_forum {
+  color: Black;
+  background-color: #B7B9BE;
+}
+
+.cls_forum_list_tem {
+  font-style: italic;
+  font: bold "Times New Roman", Times, serif;
+  font-size: 18px;
+  margin-left: 5px;
+  margin-top: 5px;
+  color: White;
+}
+
+#div_form {
+  opacity: 0.95;
+  filter: alpha(opacity=95);
+  border: 1px solid #0000FF;
+  border-radius: 6px 0 6px 0;
+  -moz-border-radius: 6px 0 6px 0;
+  -webkit-border-radius: 6px 6px 0;
+  -khtml-border-radius: 6px 0 6px 0;
+  box-shadow: 3px 3px 10px 0 #000000;
+  -webkit-box-shadow: 3px 3px 10px 0 #000000;
+  -moz-box-shadow: 3px 3px 10px 0 #000000;
+  behavior: url(./pie/pie.php);
+}
+
+.mytopmenu {
+  width: 700px;
+  height: 137px;
+  /* padding-left: 145px; */
+  /* padding-top: 145px; */
+  position: fixed;
+  top: 0;
+  left: 0;
+/ / position : absolute;
+  top: expression(document.getElementsByTagName( 'body' )[0].scrollTop + "px");
+}
