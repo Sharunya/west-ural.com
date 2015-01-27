@@ -110,7 +110,7 @@ function build_main_menu($str_poisk = "", $select_url = "")
     $m2[4] = "./spforum/";
 
     echo '
-	<br><table cellspacing="0" cellpadding="0" border="0">
+	<table cellspacing="0" cellpadding="0" border="0">
 	  <tr>';
 
     for ($i = 1; $i <= 3; $i++) {
@@ -118,17 +118,14 @@ function build_main_menu($str_poisk = "", $select_url = "")
             $m2[$i] = "../" . $m2[$i];
         }
         if ($select_url != $m2[$i]) {
-            echo '<td class="cls_main_menu" style=CURSOR:pointer; onmouseover="this.style.color=';
-            echo "'white';";
-            echo '" onmouseout="this.style.color=';
-            echo "'black';";
+            echo '<td class="cls_main_menu" style="cursor:pointer';
             echo '" OnMouseDown="';
             echo "location.href='$m2[$i]'";
             echo '"  >';
             echo "$m1[$i]";
             echo '</td>';
         } else {
-            echo "<td class='cls_main_menu'><font color='white'>$m1[$i]</font></td>";
+            echo "<td class='cls_main_menu' style='color: #eff'>$m1[$i]</td>";
         }
         echo "<td width='10'></td>";
     }
@@ -149,7 +146,7 @@ function build_main_menu($str_poisk = "", $select_url = "")
 	 </table>
 	   </td>
 	  </tr>
-	 </table><br>';
+	 </table>';
 }
 
 function build_menu_foto_bank($select_id_razdel)
@@ -191,23 +188,15 @@ function build_menu_foto_bank($select_id_razdel)
 function build_kontakt_data()
 {
     echo '
-  <br>
- <table border="0">
-  <tr>
-   <td>
-   </td>
-   <td>
-    <i><b>
+ <div border="0" style="font-size: 9pt; margin-top: 38px;">
+    <i>
     Все права защищены &copy; 2008 г. Фотоагентство "Западный Урал", Пермь
 	<br>
 	Дизайн Марины Долматовой, <a href="http://www.kaidev.ru/">реализация KAI Development</a>
 	<br>
 	E-mail: <a href="mailto:WesternUralPhoto@mail.ru">WesternUralPhoto@mail.ru</a>  Тел. 8-912-888-35-38,  8-912-98-530-33
-	</b>
 	</i>
-   </td>
-  </tr>
- </table>';
+ </div>';
 }
 
 ?>

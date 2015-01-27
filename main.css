@@ -13,9 +13,15 @@
 .cls_main_menu {
   font-style: italic;
   font: bold "Times New Roman" Times serif;
-  font-size: 24px;
+  font-size: 18px;
   padding-left: 4px;
-  color: Black;
+  color: #111;
+  background-color: #808080;
+  box-shadow: 0px 8px 8px 1px #555;
+}
+
+.cls_main_menu:hover {
+  color: #eff;
 }
 
 .cls_txt_present {
@@ -78,11 +84,12 @@
 
 .cls_1 {
   padding-top: 0;
+  padding-left: 6px;
 }
 
 .cls_box_poisk {
   color: Black;
-  background-color: #B7B9BE;
+  background-color: #ccc;
   padding: 2px;
   width: 226px;
 }
@@ -125,24 +132,43 @@
   box-shadow: 3px 3px 10px 0 #000000;
   -webkit-box-shadow: 3px 3px 10px 0 #000000;
   -moz-box-shadow: 3px 3px 10px 0 #000000;
-  behavior: url(./pie/pie.php);
 }
 
 .mytopmenu {
   width: 700px;
-  height: 137px;
-  /* padding-left: 145px; */
-  /* padding-top: 145px; */
+  height: 139px;
   position: fixed;
   top: 0;
   left: 0;
 / / position : absolute;
+  box-shadow: 0px 8px 8px 1px #555;
   top: expression(document.getElementsByTagName( 'body' )[0].scrollTop + "px");
 }
 
-.opacity {
-  filter: alpha(opacity=90); /* IE, all IE*/
-  -moz-opacity: 0.9; /* old gecko */
-  -khtml-opacity: 0.9; /* old safari */
-  opacity: 0.9; /* all normal browsers */
+.mytopmenu .backgrd {
+  width: 50%; height: 139px; float: left;
+}
+
+.mytopmenu img#hhh {
+  width: 971px;
+  height: 139px;
+  display: block;
+  margin: 0 auto;
+}
+
+.mytopmenu .build_main_menu {
+  left: 120px;
+  top: 139px;
+  height: 17px;
+  padding-bottom: 10px;
+  padding-top: 5px;
+  margin: 0 auto;
+  width: 1024px;
+}
+
+.opacity70 {
+  filter: alpha(opacity=70); /* IE, all IE*/
+  -moz-opacity: 0.7; /* old gecko */
+  -khtml-opacity: 0.7; /* old safari */
+  opacity: 0.7; /* all normal browsers */
 }
