@@ -86,7 +86,7 @@ if (!(@$select_id_razdel)) {
     play();
 </script>
 <?php
-$page = "index.php";
+$page_inc = "index.php";
 require("header.php");
 ?>
 <table align="center" cellpadding="0" cellspacing="0" border="0" style="

@@ -12,7 +12,7 @@
 
 .cls_main_menu {
   font-style: italic;
-  font: bold "Times New Roman" Times serif;
+  font-weight: bold; font-family: "Times New Roman", Times, serif;
   font-size: 18px;
   padding-left: 4px;
   color: #111;
@@ -25,7 +25,7 @@
 }
 
 .cls_txt_present {
-  font: bold "Times New Roman" Times serif;
+  font-weight: bold; font-family: "Times New Roman", Times, serif;
   font-size: 25px;
   padding-left: 10px;
   color: White;
@@ -33,7 +33,7 @@
 }
 
 .cls_txt_present_2 {
-  font: bold "Times New Roman" Times serif;
+  font-weight: bold; font-family: "Times New Roman", Times, serif;
   font-size: 20px;
   padding-left: 10px;
   color: White;
@@ -42,7 +42,7 @@
 
 .cls_name_avtor_haed_fotobank {
   font-style: italic;
-  font: bold "Times New Roman" Times serif;
+  font-weight: bold; font-family: "Times New Roman", Times, serif;
   font-size: 24px;
   padding-left: 10px;
   color: White;
@@ -50,7 +50,7 @@
 
 .cls_main_kat {
   font-style: italic;
-  font: bold "Times New Roman", Times, serif;
+  font-weight: bold; font-family: "Times New Roman", Times, serif;
   font-size: 18px;
   margin-left: 5px;
   margin-top: 5px;
@@ -114,7 +114,7 @@
 
 .cls_forum_list_tem {
   font-style: italic;
-  font: bold "Times New Roman", Times, serif;
+  font-weight: bold; font-family: "Times New Roman", Times, serif;
   font-size: 18px;
   margin-left: 5px;
   margin-top: 5px;
@@ -142,7 +142,6 @@
   left: 0;
 / / position : absolute;
   box-shadow: 0px 8px 8px 1px #555;
-  top: expression(document.getElementsByTagName( 'body' )[0].scrollTop + "px");
 }
 
 .mytopmenu .backgrd {
@@ -167,8 +166,8 @@
 }
 
 .opacity70 {
-  filter: alpha(opacity=70); /* IE, all IE*/
-  -moz-opacity: 0.7; /* old gecko */
-  -khtml-opacity: 0.7; /* old safari */
-  opacity: 0.7; /* all normal browsers */
+  filter: alpha(opacity=90); /* IE, all IE*/
+  -moz-opacity: 0.9; /* old gecko */
+  -khtml-opacity: 0.9; /* old safari */
+  opacity: 0.9; /* all normal browsers */
 }

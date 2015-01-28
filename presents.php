@@ -36,7 +36,7 @@ if (!(@$page)) {
 </head>
 <body bgcolor="#808080">
 <?php
-$page = "presents.php";
+$page_inc = "presents.php";
 require("header.php");
 ?>
 

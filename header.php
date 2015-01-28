@@ -17,6 +17,6 @@
 <div class="mytopmenu" style=" width: 100%; ">
     <img src="./img/head.jpg" id="hhh" border="0">
     <div class="opacity70 build_main_menu">
-        <?php build_main_menu("", $page); ?>
+        <?php build_main_menu($str_poisk_inc, $page_inc); ?>
     </div>
 </div>

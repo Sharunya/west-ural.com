@@ -67,10 +67,15 @@ if (@$_GET['str_poisk']) {
     <script type="text/javascript" src="js/lightbox.js"></script>
 </head>
 <body bgcolor="#808080">
-<table align="center" cellpadding="0" cellspacing="0" border="0">
-    <tr>
-        <td><img src="./img/head.jpg" border="0" width="971" height="139"></td>
-    </tr>
+<?php
+$page_inc = "";
+$str_poisk_inc = $str_poisk;
+require("header.php");
+?>
+<table align="center" cellpadding="0" cellspacing="0" border="0" style="
+    margin-top: 138px;
+    width: 1024px;
+">
     <tr>
         <td>
             <table align="center" cellspacing="0" cellpadding="0" border="0" width="100%">
@@ -79,26 +84,23 @@ if (@$_GET['str_poisk']) {
                         <table width="100%" cellpadding="0" cellspacing="0" border="0">
                             <tr>
                                 <td align="left">
-                                    <?php build_main_menu($str_poisk); ?>
+                                    <!--                                    --><?php //build_main_menu("", "presents.php"); ?>
                                 </td>
-                                <td align="right" valign="top">
+                                <td align="right" class="cls_name_avtor_haed_fotobank" valign="top">
                                     <br>
-                                    <font class="cls_name_avtor_haed_fotobank">
-                                        <?php
-                                        if ($select_id_avtor > 0) {
-                                            $r = get_avtor($select_id_avtor);
-                                            $name = sql_to_array($r, 'name');
-                                            echo "$name[1]";
-                                        }
-                                        ?>
-                                        <?php
-                                        if ($select_id_razdel > 0) {
-                                            $r = get_razdel($select_id_razdel);
-                                            $name = sql_to_array($r, 'name');
-                                            echo "$name[1]";
-                                        }
-                                        ?>
-                                    </font>
+                                    <?php
+                                    if ($select_id_avtor > 0) {
+                                        $r = get_avtor($select_id_avtor);
+                                        $name = sql_to_array($r, 'name');
+                                        echo "$name[1]";
+                                    } else if ($select_id_razdel > 0) {
+                                        $r = get_razdel($select_id_razdel);
+                                        $name = sql_to_array($r, 'name');
+                                        echo "$name[1]";
+                                    } else {
+                                        echo "Фотобанк";
+                                    }
+                                    ?>
                                 </td>
                             </tr>
                         </table>
