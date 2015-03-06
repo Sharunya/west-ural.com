@@ -314,7 +314,8 @@ if ($filter_id_foto > 0) {
                     </tr>
                     <tr>
                         <td colspan="2">
-                            <textarea cols="46" rows="6" name="key_words" title="Укажите через запятую ключевые слова, описывающие фотографию."><?php if (@$edit_foto) {
+                            <textarea cols="46" rows="6" name="key_words"
+                                      title="Укажите через запятую ключевые слова, описывающие фотографию."><?php if (@$edit_foto) {
                                     $t = sql_to_array($edit_foto, 'key_words');
                                     echo $t[1];
                                 } ?></textarea>
@@ -330,10 +331,12 @@ if ($filter_id_foto > 0) {
                             } ?> ><font class="cls_label_admin">Авторская кнопка</font>
                         </td>
                         <td colspan="1">
-                            <font class="cls_label_admin"> ( порядковый номер <input name="ORD_SHOW_MAIN_PAGE" type="Text" size="3" value="<?php if (@$edit_foto) {
-                                    $t = sql_to_array($edit_foto, 'ORD_SHOW_MAIN_PAGE');
-                                    echo $t[1];
-                                } ?>"> )</font>
+                            <font class="cls_label_admin"> ( порядковый номер <input name="ORD_SHOW_MAIN_PAGE"
+                                                                                     type="Text" size="3"
+                                                                                     value="<?php if (@$edit_foto) {
+                                                                                         $t = sql_to_array($edit_foto, 'ORD_SHOW_MAIN_PAGE');
+                                                                                         echo $t[1];
+                                                                                     } ?>"> )</font>
                         </td>
                     </tr>
                     <tr>
@@ -346,10 +349,12 @@ if ($filter_id_foto > 0) {
                             } ?>><font class="cls_label_admin">TOP 30</font>
                         </td>
                         <td colspan="1">
-                            <font class="cls_label_admin"> ( порядковый номер <input name="ORD_good_foto" type="Text" size="3" value="<?php if (@$edit_foto) {
-                                    $t = sql_to_array($edit_foto, 'ORD_good_foto');
-                                    echo $t[1];
-                                } ?>"> )</font>
+                            <font class="cls_label_admin"> ( порядковый номер <input name="ORD_good_foto" type="Text"
+                                                                                     size="3"
+                                                                                     value="<?php if (@$edit_foto) {
+                                                                                         $t = sql_to_array($edit_foto, 'ORD_good_foto');
+                                                                                         echo $t[1];
+                                                                                     } ?>"> )</font>
                         </td>
                     </tr>
                     <tr>
@@ -401,7 +406,8 @@ if ($filter_id_foto > 0) {
                                 >
                         </td>
                         <td>
-                            <img src="img/poisk.gif" alt="" width="22" height="22" border="0" onclick="frm_filter.submit()">
+                            <img src="img/poisk.gif" alt="" width="22" height="22" border="0"
+                                 onclick="frm_filter.submit()">
                         </td>
                         <td>
                             &nbsp;
@@ -595,8 +601,7 @@ if ($filter_id_foto > 0) {
     </tr>
 </table>
 <script language="JavaScript">
-    function delete_foto(id_foto)
-    {
+    function delete_foto(id_foto) {
         if (confirm("Удалить фотографию?")) {
             k = '<?php echo prefiks_admin_url; ?>main_admin.php?dlt_id_foto=' + id_foto + '&filter_razdel=<?php echo $filter_razdel;?>&filter_avtor=<?php echo $filter_avtor; ?>';
             window.location.replace(k);
@@ -607,8 +612,7 @@ if ($filter_id_foto > 0) {
     }
 </script>
 <script language="JavaScript">
-    function edit_foto(id_foto)
-    {
+    function edit_foto(id_foto) {
         k = '<?php echo prefiks_admin_url; ?>main_admin.php?edit_id_foto=' + id_foto + '&filter_razdel=<?php echo $filter_razdel;?>&filter_avtor=<?php echo $filter_avtor; ?>';
         window.location.replace(k);
     }

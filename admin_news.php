@@ -51,7 +51,8 @@ echo $s;
                         </tr>
                         <tr>
                             <td>
-                                <textarea cols="46" rows="6" name="txt_news" title="¬ведите описание фотографмм, которое будет показыватьс€ на главной странице сайта"></textarea>
+                                <textarea cols="46" rows="6" name="txt_news"
+                                          title="¬ведите описание фотографмм, которое будет показыватьс€ на главной странице сайта"></textarea>
                             </td>
                         </tr>
                         <tr>
@@ -109,8 +110,7 @@ echo $s;
     </table>
 
     <script language="JavaScript">
-        function delete_foto(id_foto)
-        {
+        function delete_foto(id_foto) {
             if (confirm("”далить новость?")) {
                 k = '<?php echo prefiks_admin_url; ?>admin_news.php?dlt_id=' + id_foto;
                 window.location.replace(k);

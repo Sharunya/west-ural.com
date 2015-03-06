@@ -115,7 +115,8 @@ echo $s;
                             </tr>
                             <tr>
                                 <td>
-                                    <textarea cols="46" rows="6" name="descr" title="¬ведите описание фотографмм, которое будет показыватьс€ на главной странице сайта"><?php if (@$_GET['edit_id_foto']) {
+                                    <textarea cols="46" rows="6" name="descr"
+                                              title="¬ведите описание фотографмм, которое будет показыватьс€ на главной странице сайта"><?php if (@$_GET['edit_id_foto']) {
                                             echo "$descr[1]";
                                         } ?></textarea>
                                 </td>
@@ -199,8 +200,7 @@ echo $s;
 </table>
 
 <script language="JavaScript">
-    function delete_foto(id_foto)
-    {
+    function delete_foto(id_foto) {
         if (confirm("”далить фотографию?")) {
             k = '<?php echo prefiks_admin_url; ?>admin_main_foto.php?dlt_id_foto=' + id_foto;
             window.location.replace(k);
@@ -211,8 +211,7 @@ echo $s;
     }
 </script>
 <script language="JavaScript">
-    function edit_foto(id_foto)
-    {
+    function edit_foto(id_foto) {
         k = '<?php echo prefiks_admin_url; ?>admin_main_foto.php?edit_id_foto=' + id_foto;
         window.location.replace(k);
     }
